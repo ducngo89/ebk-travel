@@ -3,7 +3,7 @@
  function ebk_add_scripts(){
     //Add css files 1
     wp_enqueue_style('ebk-style',plugins_url().'/ebk-travel/css/style.css');
-    //Add js files
+    //Add js files 2
     wp_enqueue_script('ebk-script',plugins_url().'/ebk-travel/js/script.js');
 }
 
