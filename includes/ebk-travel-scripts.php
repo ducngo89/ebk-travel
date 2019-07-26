@@ -1,9 +1,9 @@
 <?php
  //Add scripts
  function ebk_add_scripts(){
-    //Add css files 1
+    //Add css files
     wp_enqueue_style('ebk-style',plugins_url().'/ebk-travel/css/style.css');
-    //Add js files 22
+    //Add js files
     wp_enqueue_script('ebk-script',plugins_url().'/ebk-travel/js/script.js');
 }
 
