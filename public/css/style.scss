@@ -1,0 +1,15 @@
+$color-primary: #ccc;
+
+body {
+    font-size: 15px;
+}
+
+.search-form {
+    &.search-box {
+        color: $color-primary;
+    }
+
+    .form-control {
+        font-size: 13px;
+    }
+}
