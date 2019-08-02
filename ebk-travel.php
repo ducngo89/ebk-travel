@@ -14,10 +14,21 @@
  * Domain Path:       /languages
  */
 
+define( 'EBKTRAVEL_PLUGIN', __FILE__ );
+
+define( 'EBKTRAVEL_PLUGIN_BASENAME', plugin_basename( EBKTRAVEL_PLUGIN ) );
+
+define( 'EBKTRAVEL_PLUGIN_NAME', trim( dirname( EBKTRAVEL_PLUGIN_BASENAME ), '/' ) );
+
+define( 'EBKTRAVEL_PLUGIN_DIR', untrailingslashit( dirname( EBKTRAVEL_PLUGIN ) ) );
+
  //Exit if accessed directly
 if(!defined('ABSPATH')){
     die;
 }
 
 //Load scripts
-require_once(plugin_dir_path(__FILE__).'/includes/ebk-travel-scripts.php');
+require_once(EBKTRAVEL_PLUGIN_DIR.'/includes/ebk-travel-scripts.php');
+
+//Load shortcodes
+require_once(EBKTRAVEL_PLUGIN_DIR.'/includes/ebk-travel-shortcodes.php');
