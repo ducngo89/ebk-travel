@@ -1,0 +1,1 @@
+{$viewbag['test']}

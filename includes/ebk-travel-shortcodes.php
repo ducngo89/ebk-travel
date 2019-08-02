@@ -1,9 +1,11 @@
 <?php
 function ebktravel_shortcodes_init()
 {
+    require_once (EBKTRAVEL_PLUGIN_DIR.'/public/controllers/tour-controller.php');
     function searchbox_shortcode($atts = [], $content = null)
     {
-        return "hello";
+        $tourController = new tour_controller();
+        return $tourController->search_box();
     }
     add_shortcode('searchbox', 'searchbox_shortcode');
 }
