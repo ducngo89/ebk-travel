@@ -43,4 +43,4 @@ function text_ajax_process_request() {
 		die();
 	}
 }
-add_action('wp_ajax_test_response', 'text_ajax_process_request');
+add_action('wp_ajax_nopriv_test_response', 'text_ajax_process_request');
