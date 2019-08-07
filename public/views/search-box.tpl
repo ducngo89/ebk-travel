@@ -1,1 +1,1 @@
-{$viewbag['test']}
+<iframe id="iframe-hotel" src="https://hotel.ebk.vn?tab=hotel" scrolling="no" style="width: 100%; transition: height 0.35s ease-out 0s;" onload="window.addEventListener?window.addEventListener('message',function(e){ t=document.getElementById('iframe-hotel'),h=e.data.hotel;h&&t.height!=h.height&&(t.height=h.height)},!1):window.attachEvent('onmessage',function(e){ t=document.getElementById('iframe-hotel'),h=e.data.hotel;h&&t.height!=h.height&&(t.height=h.height)});" height="280"></iframe>

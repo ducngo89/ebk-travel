@@ -32,3 +32,15 @@ require_once(EBKTRAVEL_PLUGIN_DIR.'/includes/ebk-travel-scripts.php');
 
 //Load shortcodes
 require_once(EBKTRAVEL_PLUGIN_DIR.'/includes/ebk-travel-shortcodes.php');
+
+function text_ajax_process_request() {
+	// first check if data is being sent and that it is the data we want
+  	if ( isset( $_POST["post_var"] ) ) {
+		// now set our response var equal to that of the POST var (this will need to be sanitized based on what you're doing with with it)
+		$response = $_POST["post_var"];
+		// send the response back to the front end
+		echo $response;
+		die();
+	}
+}
+add_action('wp_ajax_test_response', 'text_ajax_process_request');
